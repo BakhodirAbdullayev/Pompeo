@@ -12,7 +12,6 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="allWrapper">
-      <h1>hello world</h1>
       <Header />
       <Intro />
       <Products />
