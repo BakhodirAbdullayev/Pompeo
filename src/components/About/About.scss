@@ -1,0 +1,49 @@
+.aboutSection {
+  width: 100%;
+  height: 470px;
+  background-image: url(../../img/about.png);
+  background-size: cover;
+  background-position: center center;
+  padding-top: 120px;
+}
+.aboutText {
+  @media only screen and (max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.aboutTextHead {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  color: #000000;
+  margin: 7px 0 15px;
+  @media only screen and (max-width: 500px) {
+    font-size: 30px;
+  }
+}
+.aboutTextBody {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6C6C6C;
+  max-width: 450px;
+  a {
+    color: #AC1313;
+  }
+}
+.aboutLink {
+  display: block;
+  width: max-content;
+  padding: 20px 30px 20px 40px;
+  margin-top: 30px;
+  background: #AC1313;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}

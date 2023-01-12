@@ -1,0 +1,93 @@
+.introSection {
+  width: 100%;
+  height: 708px;
+  background-image: url(../../img/intro.png);
+  background-position: center;
+  background-size: 100% 100%;
+  display: grid;
+  place-items: center;
+}
+.introWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 90%;
+  margin-left: auto;
+  padding: 20px;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+    padding-top: 30px;
+    .introText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+.introText {
+  max-width: 512px;
+  .introTextHead {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #000000;
+    margin: 15px 0 10px;
+  }
+  .introTextBody {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #6c6c6c;
+    margin-bottom: 50px;
+  }
+  .introTextButton {
+    display: block;
+    width: max-content;
+    padding: 20px 30px 20px 40px;
+    background: #ac1313;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  @media only screen and (max-width: 1276px) {
+    .introTextHead {
+      font-size: 36px;
+      .specialEmblem {
+        font-size: 46px;
+      }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .introTextHead {
+      font-size: 30px;
+      .specialEmblem {
+        font-size: 38px;
+      }
+    }
+    .introTextBody {
+      font-size: 14px;
+    }
+  }
+}
+
+.introPhoto {
+  max-width: 760px;
+  img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  @media only screen and (max-width: 1300px) {
+    flex-shrink: 0.5;
+  }
+  @media only screen and (max-width: 1120px) {
+    flex-shrink: 1;
+  }
+}

@@ -1,0 +1,16 @@
+
+.button {
+    display: block;
+    width: max-content;
+    padding: 20px 30px 20px 40px;
+    background: #AC1313;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover {
+        background: #ac1313cc;
+    }
+}

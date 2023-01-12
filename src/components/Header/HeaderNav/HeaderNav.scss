@@ -1,0 +1,111 @@
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    label, input, .headerNavBurgerLinks {
+      display: none;
+    }
+    .headerNavLinks {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      .headerNavLink {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #6C6C6C;
+        &:hover {
+          color: #AC1313;
+        }
+      }
+      .activeLink {
+        color: #AC1313;
+      }
+      .headerNavCart {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        i {
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        gap: 25px;
+      }
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .headerNavIcon {
+        display: block;
+        font-size: 25px;
+      }
+      .headerNavBurgerLinks {
+        position: fixed;
+        z-index: 5;
+        width: 50%;
+        height: 100vh;
+        background-color: #b394d2;
+        left: -100%;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 35px;
+        transition: all .45s ease;
+        .headerNavLink {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 22px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #6C6C6C;
+          &:hover {
+            color: #AC1313;
+          }
+        }
+        .activeLink {
+          color: #AC1313;
+        }
+        .headerNavCart {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          color: #000000;
+  
+          i {
+            display: inline-block;
+            margin-left: 10px;
+          }
+        }
+      }
+      .layer {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 3;
+        top: 80px;
+        left: -100%;
+        background-color: rgba(179, 148, 210, 0.7);
+        transition: all .55s ease;
+      }
+      #check:checked ~ .headerNavBurgerLinks {
+        left: 0;
+      }
+      #check:checked ~ .layer {
+        left: 0;
+      }
+      
+    }
+  }

@@ -1,0 +1,59 @@
+.collectionSection {
+  margin: 120px auto;
+}
+.collectionTittle {
+  margin: auto;
+  width: max-content;
+}
+.collectionHead {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  margin: 12px 0 45px;
+  @media only screen and (max-width: 500px) {
+    font-size: 30px;
+    .specialEmblem {
+      font-size: 38px;
+    }
+  }
+}
+
+.collectionCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 375px));
+  justify-content: space-between;
+  gap: 20px;
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    justify-content: center;
+    gap: 35px;
+  }
+  @media only screen and (max-width: 750px) {
+    .collectionCard {
+      img {
+        height: 400px;
+      }
+    }
+  }
+  @media only screen and (max-width: 660px) {
+    grid-template-columns: repeat(1, minmax(280px, 400px));
+    .collectionCard {
+      img {
+        height: 450px;
+      }
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .collectionCard {
+      img {
+        height: 380px;
+      }
+    }
+  }
+}
+
+.collectionLink {
+  margin: 60px auto 0;
+}

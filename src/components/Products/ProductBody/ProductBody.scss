@@ -1,0 +1,17 @@
+.productText {
+  max-width: 505px;
+  .productTextHead {
+    max-width: 350px;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 1.2;
+    color: #000000;
+  }
+  .productTextBody {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #6C6C6C;
+    margin-top: 25px;
+  }
+}

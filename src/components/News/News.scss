@@ -1,0 +1,86 @@
+.newSection {
+  margin: 120px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.newsIcon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+.newsTitle {
+  margin: 40px auto 15px;
+}
+.newsHead {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.25;
+  text-align: center;
+  @media only screen and (max-width: 500px) {
+    font-size: 32px;
+    .specialEmblem {
+      font-size: 50px;
+    }
+  }
+}
+
+.newsForm {
+  max-width: 500px;
+  margin-top: 50px;
+  .newsFormInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    input {
+      width: 320px;
+      padding: 10px 20px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #A1A1A1;
+      &:focus-visible {
+        outline: 1px solid #6C6C6C;
+      }
+    }
+    button {
+      padding: 10px 40px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: center;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      background-color: #000;
+      cursor: pointer;
+    }
+    @media only screen and (max-width: 500px) {
+      flex-direction: column;
+      gap: 30px;
+      input {
+        width: 290px;
+      }
+      button {
+        padding: 10px 30px;
+      }
+    }
+  }
+  .newsFormRule {
+    width: max-content;
+    margin: 40px auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #A1A1A1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
